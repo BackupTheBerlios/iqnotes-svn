@@ -1,0 +1,13 @@
+1. Desktop installation
+-----------------------
+
+First of all, you need to decide where you want to install IQNotes.
+You can do that by setting enviroment variable IQNOTES_PREFIX. In bash,
+command will looks like this for example:
+export IQNOTES_PREFIX=/usr/local
+
+Then, create Makefile and compile by command:
+qmake 'CONFIG+=desktop' iqnotes.pro && make
+
+If compilation is successful, install it:
+qmake install
